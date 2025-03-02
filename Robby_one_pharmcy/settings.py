@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qmats0%%d=%k%6l+uh_h%o@8=@9nv#y*h0@f+m4v0=tg14$86k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['robby-one-pharmacy.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
