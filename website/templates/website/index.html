@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robby One Pharmacy</title>
+    <link rel="stylesheet" href="{%static 'website/style.css'%}">
+    <link rel="stylesheet" href="{% static 'website/icons/font/bootstrap-icons.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Robby One Pharmacy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about/"><i class="bi-info-lg"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/events/"><i class="bi-megaphone-fill"></i> Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="branches/"><i class="bi-building-fill"></i>Our_Branches</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section class="hero-section">
+    <div class="overlay"></div>
+    <div class="container text-white">
+        <h1 class="display-4">Welcome to Robby One Pharmacy</h1>
+        <p class="lead">Your Trusted Partner in Healthcare</p>
+    </div>
+</section>
+
+    <!-- about section -->
+    <section id="about" class="container text-center my-5">
+        <h2>About Us</h2>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSEhIVFRUVFRcVFRcVFxUVFhUVFxUWFxUXFRgYHSggGBolGxUWITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0mICUtLS0tLysrLS0vLi0tLS0tLS8tLS0tLSstLS0tLS0rLS0tLy0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAACAQMEBQYABwj/xAA+EAACAQIEAwUECAUEAwEBAAABAgADEQQSITEFQVEGEyJhcTKBkbEUQnKSocHR8AcjUmLhFjNT8YKisiQV/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAECAwUEBv/EAC8RAAICAQMDAgQGAgMAAAAAAAABAgMRBBIhEzFRIkEFUmGBFDIzcZGhwfAjQtH/2gAMAwEAAhEDEQA/AL3GcYp4agKrnRQoAG7MRoo+B9wJmax3byqK9ILWRaLCm1UpRJalm1dPGf5hUHcWB6Sn7WYtqmGw7ZSFDOG6FsqZfwzSf2eahWotUrqpZVVamYVGzmj41cm9h4SA3ULyvcZ+ng4Lvy+TeWmhXDdOOfY1PZrtmK9ZsLVAWpmYU3AKiqouRdW1RyutvXbabIC0+feDVnfG0Xveo2Iptf8AuNQH5zdY3jQqYgs2JZKYxIougrOhAGOoKWCBgRTOGFYlx4dd72nXW89zi1+mjVJbfdHoHDxmZn6mw9BJ+WeJ4nibhaooYhXGdtK2NxNNkw3c0zQamveqXrFs+cAMwfTKF3g8HxdOvRw9HE1npvV+kLVrmrXL0ijU3otUDOVAYCons65vKWtZODB7wTCAMx/ZvFNToUwilEIzrTa5KK5LhSSSbgNb3TUYHHB9Dof3tLZ6WcY7jmr1lc5bF3JiiEFiLCvKEdB1oMImUeGpPiL1DVZFzEIqG2g5nzkJyxhJckJTxwlyXUW0qRwQc61X70McGTbPU+9/iV5n8v8AY1Kfj+y0EWUvA8W2dqLm+W9jz8JtaXcnXNTWUEJqayJFtK3ivHsNh9K1ZVbfLqz/AHFBP4SoT+IOCJtmqAf1Gm1vwufwlhI1JiSPgeIUqy56NRai9VN7eRG6nyMkxgDOhRIxCRBFixMaBM6LaJIYJZAYQY4YEYhIJhxIANtBIjkEwAAxsx0wbRgNGAwjhEEiSEMsJR8aHjH2R8zJ/G+Idylxqx0UfMnyEyPEOF1nId6liyg2JNwLm223pKpWeralkrlZh7UslgnB6VXCnDuPCQGBHtK9tGHxPuJlP2aw5o95gu+RFqMRUqogepkIClWWoQALDZc2/Odw3tGQMoAJA1A8hMfQ4k5rlydWe59L7Tn0FdkrJK3slxg1NbdZRX6Gnnnnlcf5NlwXs3SwtRqhqd4wLCkRcZUuQGN9c5X4XO+8ssZxCoPElVlt/cSPfeJh1uAeVpA4/iQEyhcxPwHrOiOocfTCP/p5PUau/VWdSyXJT43HXYlqjZibk3Oplz2awrq+d/Ztpc6zOYfB3N7CbjD9l++oq61npsV0Atb3ialOuhVH/kX8E3TO70Vv98k56vQyTgajZlKi9iLkbAc5R8M7L4kVf51QlF8z4ptsPh8oAAFhFqdeo+iEW8rv7F2n+G/95zX7Lvx+5Kp1bxxWkNqolPUx7ksabBVXm3P0ExJO2OFjJpzsqj7mh7/kRaQOzbfyiOjsPlM1i+NupHjBJItYCTeGccp0FZKl7s2YW1BJsLSGkdts8NfRFtmltSVuxqKTbbx2/k1Za28ZOOpjdxKLEYxnF2Poo2Hr1kdTebsND8zMa34lj8iCpcTpUqz1qjhUBfXrfYADUk9BM/x7tvVr3Sjmo09rgjvXHmR7A8l185U9paoaqwvopIHr9Y+vL3SmZwo1MyYwdeY/Vmjo63090vfkdW19BqdSTqSepJk6gRaxAkClXQ7MPfpLOlQBtbeRbaNGMYvsS+HVWo1BVpHKw6bMOjD6w8p6hwvHrWpiovPQjo3MTzRF5WvL/spje7q5DotTw+jfVP5e+WVzKra+Dbzp06XnKCYohRDBgDeIYpnSBIGCYZgxgBEMMwTHgQJiGEYMMACRAIhwYIBthAIjjQDGBl+1g8dL3/NY/wAaHjH2R8zGe1P+7SH79oSTxr2x9kfMznr/AFJ/Yor/AFJ/Y857K8DrrU72oLArew1uT1j3aDgKFu8TwNfxA6A+YPWW/wD/AEagRciE+EcvKQMVisQ17q1j5CR6ijZvjLn7YMyzUzl7vj+Cv4TxWuGFI3ccrbj39JqsHg2q6ZCfI2/EzAMatGsHGhvz0B6ibv8A1MaNNc693cfVG+nWaVFtOHuSy+zKraFZOLXZ+PJoKPZtRbOwFtcqj85cs2W2oCgfsTzzh/al8TVFJLqupZudhLnH8RLeEHQTN1upe5RiuT1Pwz4VFx9Pb3LnGcb1smnnJvCsQ9Tc6D8Zilr62vqdBNzgVFOkBcXtc+ZlGkjZKzc2zu+J10aenYlyzuKYhApUgG+88w7UY2qKgpUjlTKCeRY3N7+W00HaLiBJyg++ScTXZaF0CAjLeoVBexsABcaf5mtOpxlBv6njur1LGZvC8IrmkrqrVOWgJIlfxJ8Th3VqlCoFH1mU2Hv2Esq3GcfSIaliCyjdSFYH1BGnulk38SmKZauEViRZvEQp9xU2ircKrurHk2rPiU7dGtJPhYxkl4LiSuoYMDpJDcVpoLk38hvPMapZ6jGiDTVjcIpJCg8gTyk/BcPJJBJ8Iub3JvoT8xNK34lTjKTMDTfDJ2TajLgkYioWJY8ySZGqGmCGqAkDkIara4ve/PykqjhTa9rjrMFy9z1MIY4K6saL6hGA08QBtrsL9fKSuF0WBujEqN9Y69EC9kBvv0PqIWBWxA5k7DYCQbyi2MMPsP4/F1ltlFiev4RzA43FWzlQ2U35XsOlo3x3BtU2JkPhuCrJqpIObUHQZdPZ5nnvce+EeERs5fJ7nRqhlDDZgGHoRcfOHeM4WnlRVH1VUfAARy860cAd4l4N514wFnTohMgSOMGLeDeNCEMEwrwTGIQwTOvEjwB0AwjBMQAmAYZgGAzM9p/9+j7v/uP8a9sfZ/MxjtObVqTHYAH4NcwuK4lGZWVgQVHMdTOetrqT+xz1tdSf2KFO1FBFC3FwoFgL8vKODtAh3XTqbTNN2XxIUN3R2B0F+XlIiV2p3SoLeR0I+MqlKM+EZ84SXfJrOIUsPXQhgraXFtGB8p5vjMUxdlqEsQbKSdlHlPQOE8Bw9dResc25VTa3kectKf8AD7Ch1qDMSDezHMp9QZDSXw083uy19V2O6jSWJbngz3Y3s7ita3dFVZPCWIUn0G9o/wAQ72ixFRGU9SND6HYz02nUG2375QMQquCjKHB3B2987nTVe98GadHxG3TR6bXBgey+ENWr3jeyvzkntXxchsqG2Xp1lzxKgcJRZqSXX6wFyVHXzE8/xpLkMvM/OXQp2JJGVrNRK+3Mv9Q6uMZvbN/OalMZSankZ1CkAanptI/BuwlWqA1Rwib6C7E+QmjfsDQK2FSoG5MSCPeLS++ULK1GTaa7YK1pEnmPBQUqOFGneA+rSRVwVLIzIgbQ2+tcy34X2GprrWbOei+FfjuY5j6a0ahWmoVQBYDl4dZl6mqNSUo2NvP2ISqnDlvgw+VNCFA9ABKziFyT3eoffUdP8RysHq7iyjpIzUmp6j2Tp6S6fqWDo09vRs3PsI8lYavbQ7dJHYfr0gZuXkflOdo2otNZHa2ID3ucqA6f3H9BGcJxQq1nyFfqlQQR6nYyCuJA9pSwGgA/XlLSnw12XP3OhBsM1mGm9mteScUlyRVkm8otBxgMFC0mfc5ltYAb3vuJZYeutRFcaX5dDzmYwOLRLqjFXW5INjcWFxceUtezVE1Kq0h7LuLeSk6/AXkXHwSU89z1rB/7afYX/wCRHbzrQTOxGeLeJEiXgA4DOJggzmkBnEwSYl4jGNAxbwbxAYhMkI4xDEM4GMBYMUwCYgOMAwohgBA4tw5ay2JsRqp6evlMPxbgFVXA8J8O9/M9Z6I0pONe2Psj5mUzohJ5fcqnTCTy+5bYVhkT7K/ISu4xwujXBSqgYHnsR6HcRcNiDkX7K/IQnrczMC/Uqf5e5pwofuee8awZwbeG9iNGGh6a+cd4R2wqIPEc4G/9QH5zYY3A08TTKNqDz6HqJTYHsYlNyc1wduol61MI17bu4lW5Pj2NDw7GCsgdTofdLBaoWw66+pkXh+FFNAgNwNvKM4/h2Idg9J0AAtlYHXzuNpX8L1EoalqPMX3I6qClX9S1z30OxmWwHZZzjL2H0YNmHU6Xy+l5LxZxFFc1Q0lUblnPytcyfg+0tJaYa4KjQtmAGbp6z2LhuhmBhuyEZYsNMIuYShqdo6JyjvFUtqLkajbQw24lRuV7xcy3zDMLi295havVy083Bwf++DSp2WR3JlkK8peMoCxO4IsfX/qP1aha/d1FBX2tiALXBPu1lHxDFMEZxUSpqBppYna86dO6tZXzx/hlOqg8YRHXgiMcq5vQam3paM1eyoOuWt+P6QOB4ytRxIq1fZOamw1vyJsPLSbmrxSiGCNUAYgEA32JsL9NdI7dJteI2No5o07l6meN8RXJUZdfCxXXfQ21kGu+kn9o2BxFYg6GrUI9C5Mo6r8jKkjXTxFL6FngUGW1tvT8YVPEVaZ8C6eRKkyppY4pvrpa43t0Pwj1LjA/7ja5HGXHJaVaFN1ZylntqTe5M2n8OOGlnNciyouVfNyNbein/wBhMKvETV8Ki3U8rec9n7NikKCpRN0p+DNawdh7bA8xcnWThHyVzs9kWsAw4hEuKRuIYRgmACAwjG7w5BjAaATCeNkwQC3nXgXigyQhC05TBYxFMAHWMbYxSYJMAFiGCGnEwARpScZ9sfZHzMu80ouNn+YPsj5mAFaMXXFkWkp8K6i50tJdHh1eof5hsOmw+Ef4RhiKqvmJBQC3QZR+YmkWZGi09dsNzNO/UuGIxS7EPA8PCCSzRHSGIs0+jW1hpGc5PORn6MsZ4rjkw1B6xFwo0HUk2A+MmTH/AMUajrgwV/5FJ6XGoB8t/wAJOmiEZYhFIjOTa5Y3xGk2Iw9TMw7yqul9lvY28pXU+E1FYOrKxWqzjOT4gyBTnIG4toZluF9rnLAPtzA+YmyTiiAAlst9gQbn0E34VQuW5e3H7HmtR1KZbX7/ANkE8BqWUZl9lgdSAC1TPoLeJRtYy74Vwl+97xmUr3jsdScwdQtspFgfMekgVeMLoFVzfnlIH4y9p8Sp06a52Ga18q6n39JjfH6HDTYri9zaR2fCZOd3q7JD2A4P/IehmsXz+IXNrk5b33sMo90dr8DZ7vWamLikpAuEyUmJN78zf3SjxHaxwCKShfM+I/oPxlDjcfUqG7uzHzO3oOUzNBROut9T8zeWbdii3hdkXWJelSKj6QKhSpUa4V9VZVCgsrLqMu4NjKvtRxJqr95TUAFAhsTfQk3PXeVtQkxEcjYzua4wRjCKKweI6yPjaP7/AMiXppKTe1m5kfnIWJwTHUWPp+hlDg0dcZRl3KFsNbXqbAdT5npHzQ8dTwXWzZLhLgqAbsQNf8jWHjMM4XUHQkm4Oxtr+H4y0qs5woLHViObZiAbXte1rIvwkcs6q64bU/JN7BYemcRTLEKoJvm0AOUldTyJta89R4T3GHopRWshFNcoJZAT62M8r7P4F7B/CBnRrMSLhCTvY2udPdLDivF6uGohsoIRrL4yG8SNTBJybqDcHkb9ZdDscWohFWek9LrcbwyC74ikoHMuo/OScHi6dVQ9J1dTsym4PoZ83vxqszu7VHcu1M+N82iG5U2ABBGm3xmu/h32sahXNOobYaqdiSVoECyEHpYBT7jyk8nOezMI2RDzAi41B1BHMQTGADCKIjRAZGQ0I5jLmONGniQCXi3gXixgI8ANDjTwAeVoLmVPG+NJhaXeurMMwWy2vc3tufKRcP2qpMaq1EqUWop3jrUAvk01GUm+4+MCLkuxe3h3mSp9s08Dvh61OjUbKlVsuUnlcA3AjmL7XZK1akuHdxQAaowZAApANwCdd48huRpbyl417Y+yPmZDxvawA4cUqLVDiVLICwS1uRvKqr2pSqbmm6Fbowtm1Um9iuh3hkNyNlw0gIth9VfkJYK0Ywg8CfZX5CPiV0VdOCjknKW55HAYsAGGJaQFkTi3D0r0npVBdWFvToRJkFgY1wxHgnaHsviMJV0RnW/hZRcEedpaYWvXr5O9XKi7GxWxA/Ez1HieFZvFtbXXa0w/E8YXO+g2/W001qlXXui/UcHQlbbtlH0r3GxWN8tyfebxfwkbvNR8fhJBaxmbOcpvMnk0IVxgsRWDgIjJDX97RcvWRJgCnF7rnC+E7b92jAEU4QS8ctp8Y3+x7uUMAKv4RyiQAVULZhlItcEdLHQe6ALfvWGhhhApNdh2ledj8GK1F6bH2hYHoRqp9xAgxxKpEeBZPK3p5HKuDdSQQOoNjr6whiDra4B5AzTdruDgg16Si4uaqjcjmwHM9RHOyv8ADrFYmz1R9HonUM4/mMP7aZ1Hq1vQyt8CwbXsZ2prGgiVlzFLJroxWwyEW3upG41m6pMWF8pW42bQ/CVnBeB0MGgWkpJChTUc5mIGgueQ8gAJPNUhhc76eXraGS1UuSDJg3kfi/EadBQ9UkKxy3Ck+K17G20pz2wwn9bfcb9InJe7OeVsIvEngvmMFpn27ZYX+tvuNA/1nhf6n+4Yt8fJHr1/Mi9acGmebtjhf6n+4YP+ssN1f7hhvj5H16/mRpCY0xlA3bLDf3/d/wAxt+2WG6VPu/5i3x8h16/KO7ccPqV8N3dJSzd4jWBA0F7nWVA7M1c+Lo2Jp16S5KztmcOpBCMScxFx+Esx20w/Sp90frA/1rh/6anwH6w3x8kHbU3ncVmI4bjMRh6ODegKa02XPVzqQVQEDIBreMcU7P1WxWIb6N3q1FVaTd4ECsFUZjrc7bS8/wBbYe3s1PgP1jTdtaH9FT4L+sN8fIupV8xWcX7P4gnBl6YxHdI61RnC3uRlW5tsOflK0cAxlO4WoKKkllphs+RSTYXtNNV7bUbf7dT/ANf1lTxLtbSZgQj+z/b1PnGpx8jVlWeGDQ4jiso/m1dhzPSdU4rX/wCap99pBwX1Nen5SRXoMWNlJ1mf1JJ4bMxyl5APEq//ADVfvt+sNOI1TvWqffb9ZDcW3EdSgd7D4gRuT8le5+SxD1SL94/vqH8zArCpa+dj18ZP5yPVq2Y6j9iS8FqGtbUStyklnI85I1OqwBJZjy3MYZr845iTraRi2vumlVHbFG1p69kEgWfxL02/WTw2g9JUJU8Y8j+sdqcXop4XcAi+lmJsTf6o85YWstaZBH/UcD+f7+My+J7TIuiIW8z4R+v4CQanaWsdgi9LAkj4mSSIto3BN4N5gn43iDvVI9Mq/ISLVxLt7TsfVifnHtFuPRXeA2IUbso94nm5A6RRHtFuPRhj6f8Ay0/vr8iYi8Spc6tP76/rPO7xLx4DcekLj6X/ACUx/wCa/rJFPFIdnU+jA/CeYBooaGA3H0HwrA0aVNatu8YgEEgaX/pHK3XeWH0oliPhbbyPvnnn8J+OhlbBOdVBelfmt/GnuJv6E9JtuJ8WwuDpB8RWVRqFHtMxBvlVRqxEpkmmddM61HL7lrQ1FrW/WUvaDtThsIRTdu9r28NGnZqnq3KmvmxExFX+KAr1GUU3o4e1g17VH63ZdKfLQG/nMpjGwysxVtCxILMWbU38RJuT5yDnjgeJT5XCN1xfieIxVNs5CKfEKSaiwNxnYi7sLX0sPLnMoTIuCxp+rUa3kxksEW1Bv62nNdy8ozddoZyXUjyLVCjQgk+toBRSpYXFuuu8ZxD3N9otGsoBDA2PSc+HgyEgM0S8dyoVJUEW6xmnaxJ5SWSQ/SAsSeVtPWcWX+n8Yz3wsQBa9ud4GaGMgO4pMrWjUkVcQjalTf1jWIQKRbYi8Iv2YAXjxAAFxe4vvAOUW0vcX3g1al7crC0fcZIo5W8OW3neVuL9r3fmZMw1XKwMYxjoW9k7dfMxrhk4dyyw1UgD0Hyk2liDcXY7iQsEtyoPl8pYUbFiqU2Yjpc7c7CVy74wQ9zsaPGdRI+INnPrHsTTe+ZlK32uCAfS+841VOpQE+sMNYIyTG6djvCAsdImNTKwsLaA6TlqjKRzNv8AMlD1NEqob5qIFRrmRs34GOVhrI9Zbaj/ALE0z0BFq1srsPIkekznEa13vzIEuOIsbhx0K/HaUjgE38rW95izgNjlwgF/GPpSY8j8o5h1tsJJAidvg7K9Amsyf8DC4Y8yPnHFwo6x0RZB2yOqOipXsNfRl8530ZfOO3iExdSXks/DU/Khr6OvnBNBfOPEwSY98vJH8PV8qG+5Xzi9yvT8TFiXhufkOhV8q/gkYCsaVRatIlXQ3VhyO3PTYkRMTS7ws7MSzm7MdSTe+p9dZHLx2jVhuYdGp8bUEalTuDQCrYsSCd9RY7CBS4bUqIRkuVGttdPOPNytJnDMZVph1VwA48Vxfrtt1kVJo4LafViRXdnqqpUyPs3sm5Fj0M1zKvK3ulBxTgYp00qGoD3liLfVJ2a/qRceflC4ZjnIyOPEuh90hYs+pDpk4+iROxCX2/7jK0GbYbddI7UqA6fsTu9sCDz0lLWexx6r4dGxuceGIKZRWvbUdZHo3IYczb5wKi28x1jcjta7mJKuUHiXckfRWtfT4xgGPYNtSL7gia3sZwgBe+cAsTZOdgOfqZKCcngnVVvlgoqHZ3EuLilYf3EL85KxvZ3E2BFO9hY2ZT+c3mIrqil3ICgXJPISNgeKUqwPduGtvuCPcZf0o5Ov8JX2b5POq2EcEAqQQNQdCPjGKtFl3npXFeGJXQqw8X1W5g/pPPa1FgMh9pGII9JVODg/oc11HTf0IlNSTYRvF4Vr8tuo6mTcPh2DAm1vUSux7eM/vmZGLzLgrh3NNw2krNTVFYs2UC9rXOmvlNBw/D4irXqYfBOmHpUbCviGUVGdnuXpKLgXtbMTtew9kXouDYjx08wGXQHTNoRYnKdDpyO8l4yn3NTEYWriDhlxFc4qjXNxSq94gSqlVrWVhe62IF8p6S7TxXL9zs0kVy/cnYk1qFFMV9IXH4FiFq3pClVQM5p954SMwBNiCPqi1j4hVcWwfdVLA3UjMN9j0vyuPOSO0FVC1ehhcT9KfFr3NOihU06atkarUxBpqFFrNa1rZyeZMPtGoFRaYbN3dNUJsAdOttzaw11k70tuSWrinDJA+k33QE2tcyNiKo3ygDnbaSqrkEgGwEhYqtfec+mh68o59HDNmfA25vG2fSIpt+kGs87zVyVlfW69fwPKUL+2Pl5y7x7Dcb8/OVFXWoCPX9/CRZZBepEyiI4DAWdeVG0uweadmjZMUGRJZCzTiYkW0YCXg3hEQTATEvEJimCxjINgkxRBhqIER41gFJPKHTZCdXNvUfpK/iA0Ued/h/3OwyHpHtyji1Nnrx4LjitXD93SSmWz/Wu1wD5DYC8HhlQXzMNVIV+pU+w3nr4T/wCPWVmOwBC94vL2/wBYuCxYzXbUEZW65TzHmLA+6S28YOSVj37jVY6vTAAW2srxWl1i+A0GwIxFIFatMhalnd1Y3GtmJsGVlcWtowmcq02QhailSVDC/wBZTswPMShw2nStRGbwTke4jbp0jKVI7ngV3UQtXIIW/wC9p6hwankoU1HJF+U8wL7+YtN3wbtJQdVRm7tgALPoDYW0bb4yVawzhr00qpPwOdtH/wDynzZQfjf8pmuxdXLibcmRh8NR8ppO165sMdRbMpvy3mV7NqVxVI3BBzC4+yYSfrRTb+tE9HVpiePYIfThmtlqMhI63sCNJsVaZbtUf/1Ye2puv/3Jz7Ft6zH7l4nZ7Df8Q+836zOdpuzv80dygC5BcX53a+/um5VLC532Hl1PwlPxmp4x9kfMye1Mk4R8GOwdXLlO+g+UvsNxi6dzUpJVpnTLVAcfiJ06cGXF5Rlqbg8oVOLrSzJh8PRoZj4jTVQT5kgDX5SuqVzc7b9BedOg5OWMinZKf5mRXq7sW9Ywz32M6dOjT8HfoorpuX1G83lGKzgDedOnUdiKvEG5sASSbADUknYAczIuKwT0azU6q5XQ5WHTn+c6dIPsXU/qIIRbzp0rNbIkWdOiJBCdadOgM4xDFnRgAYJE6dArYEcpbzp0BLuW+L4TfAHEW1GIyjzTJr/7fIzPUzOnSa7GVc27ZfuXGBqaWJkDE8IqLUApoWVtV6AcwTyt5zp0jKbQ4VKS5N32VwbDD4ii7XZqQsBtZcxHqRmAv0AHITS8Q4DTxGHSlUFiqjI49pGygXH5jnOnR1vcsspsioz4PLeI4Z6FVqT65WKhhfK1uYv8oK1Z06VMtosc45YeaITEnRIuaHFxtQIaec5Dut7rcG+g5e6SeFcUFKpTZlJCEnTcggjn6zp0njJzTri3lo9H4Fj6eKBNFr5bZgQQVve1x7jt0kulgE78VWF3RSq32FzqR5/rOnS1clUyTi3tb3/v5zN8XqeMfZ/Mzp0aIn//2Q==" class="img-fluid my-3" alt="Owner of Robby One Pharmacy" width="300">
+        <p>Welcome to Robby One Pharmacy, your trusted healthcare partner. We are committed to providing quality medicines and healthcare services.</p>
+        <p>Founded with a mission to make healthcare accessible and affordable, we pride ourselves on offering a wide range of prescription and over-the-counter medicines. Our team of experienced pharmacists is always ready to assist with expert advice and personalized care.</p>
+        <p>At Robby One Pharmacy, we believe in community-driven healthcare. We regularly conduct health awareness programs, free medical checkups, and wellness workshops to ensure our customers stay informed about their health and well-being.</p>
+        <p>We are dedicated to maintaining high standards of service, ensuring that every customer receives the best care possible. Visit us today and experience the Robby One Pharmacy difference!</p>
+    </section>
+
+    <!-- events section -->
+    <section id="events" class="container my-5">
+        <h2 class="text-center">Events</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <video controls class="w-100" preload="auto">
+            <source src="{% static 'website/videos/video1.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="col-md-4">
+        <video controls class="w-100" preload="auto">
+            <source src="{% static 'website/videos/video2.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="col-md-4">
+        <video controls class="w-100" preload="auto">
+            <source src="{% static 'website/videos/video3.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+        <div class="row mt-4">
+            <div class="col-md-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcWWf2kiR422iV0rPAZrcXK1tNYudWKMfuhg&s" class="img-fluid" alt="Event Image 1"></div>
+            <div class="col-md-4 pt-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDYik2Xl5QQPkRX9jvU8Zh82Ba2vu0z62whQ&s" class="img-fluid" alt="Event Image 2"></div>
+            <div class="col-md-4 pt-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtvhQ33BRdHvN4gN9o7HH5J_tUDpxxUSFCKw&s" class="img-fluid" alt="Event Image 3"></div>
+        </div>
+    </section>
+    <!-- location section -->
+    <section id="locations" class="container my-5">
+        <h2 class="text-center">Our Branches</h2>
+        <div class="row">
+            <div class="col">
+                <div class="img img-fluid">
+                </div>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item">Branch 1 - Robby one pharmcy HQ at kipata na nyamwezi at kariakoo</li>
+            <li class="list-group-item">Branch 2 - Robby one pharmcy at kipata na swahili at kariakoo</li>
+            <li class="list-group-item">Branch 3 - Mulago pharmacy at uhuru at kariakoo</li>
+            <li class="list-group-item">Branch 3 - robby one pharmacy at uhuru at Gongo la mboto</li>
+        </ul>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="robbyonepharmacy@gmail.com">robbyonepharmacy@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <p><a href="/about/">About</a></p>
+                    <p><a href="/events/">Events</a></p>
+                    <p><a href="/branches/">Our_Branches</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <p><a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+                </div>
+            </div>
+            <p class="mt-4">&copy; 2025 Robby One Pharmacy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+   <!--scripts  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
